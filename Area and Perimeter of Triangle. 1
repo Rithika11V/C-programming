@@ -5,11 +5,12 @@
 
 int main()
 {
-    int b=5,h=6,s1=1,s2=2,s3=3;
-    float Area,perimeter;
-    Area=(0.5*b*h);
-    perimeter=(s1+s2+s3);
-    printf("Area of Triangle is %.2f\n",Area);
+    int base,height,side1,side2,side3;
+    scanf("%d %d %d %d %d",&base,&height,&side1,&side2,&side3);
+    float area,perimeter;
+    area=(0.5*base*height);
+    perimeter=(side1+side2+side3);
+    printf("Area of Triangle is %.2f\n",area);
     printf("Perimeter of Triangle is %.2f\n",perimeter);
     return 0;  
 }
