@@ -5,7 +5,8 @@
 
 int main() 
     {
-      int x1=6,y1=5,x2=3,y2=8;
+      int x1,y1,x2,y2;
+      scanf("%d %d %d %d",&x1,&y1,&x2,&y2);
     float midp,midl;
     midp =(x1+x2)/2.0;
     midl=(y1+y2)/2.0;
