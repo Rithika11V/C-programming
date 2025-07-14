@@ -1,0 +1,71 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+#include <stdio.h>
+
+int main() {
+
+    int tickets;
+
+    char refreshment, coupon, ticketType;
+
+    float ticketCost, totalCost = 0.0;
+
+    scanf("%d", &tickets);
+
+    getchar(); 
+
+    scanf("%c", &refreshment);
+
+    getchar(); 
+
+    scanf("%c", &coupon);
+
+    getchar(); 
+
+    scanf("%c", &ticketType);
+
+    if (tickets < 5 || tickets > 40) {
+
+        printf("Minimum of 5 and Maximum of 40 Tickets");
+
+        return 0;
+
+    }
+
+    if (ticketType != 'k' && ticketType != 'q') {
+
+        printf("Invalid Input");
+
+        return 0;
+
+    }
+
+    if (ticketType == 'k')
+
+        ticketCost = 75;
+
+    else
+
+        ticketCost = 150;
+
+    totalCost = ticketCost * tickets;
+
+    if (tickets > 20)
+
+        totalCost -= totalCost * 0.10;
+
+    if (coupon == 'y' || coupon == 'Y')
+
+        totalCost -= totalCost * 0.02;
+
+    if (refreshment == 'y' || refreshment == 'Y')
+
+        totalCost += tickets * 50;
+
+    printf("Ticket cost:%.2f", totalCost);
+
+    return 0;
+}
