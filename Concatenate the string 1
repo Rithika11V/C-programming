@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+       char str1[100],str2[100];
+    scanf("%s",str1);
+    scanf("%s",str2);
+    strcat(str1,str2);
+    printf("%s",str1);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
