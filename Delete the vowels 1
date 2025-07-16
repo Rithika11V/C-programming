@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+        
+       int isvowel(char ch){
+           return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch      == 'E' || ch == 'I' || ch == 'O' || ch == 'U' ;
+           }
+           int main(){
+               char str[100],result[100];
+               int i = 0, j = 0;
+               fgets(str,sizeof(str),stdin);
+               while(str[i] != '\0'){
+                   if(!isvowel(str[i])){
+                       result[j++]= str[i];
+                       }
+                   i++;
+                   }
+                     result[j]= '\0';
+                     printf("%s",result);
+    
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+                    }
